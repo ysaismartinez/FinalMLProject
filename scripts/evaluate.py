@@ -1,5 +1,3 @@
-# scripts/evaluate.py
-
 import joblib
 import torch
 import numpy as np
@@ -8,10 +6,14 @@ from scripts.models import SimpleNN
 from scripts.preprocess import load_and_preprocess_data
 
 def evaluate_models():
-    # Load data and preprocessor
+    # First, we will load the data data and preprocessor
     X_train, X_test, y_train, y_test, preprocessor = load_and_preprocess_data()
 
     X_test_dense = X_test.toarray() if hasattr(X_test, "toarray") else X_test
+
+    # We will have two outputs. 
+    # One output will come from the evaliation of a random forest
+    # and the second output will come from the evaluation of a neural network
 
     # === Load and evaluate Random Forest ===
     rf_model = joblib.load("models/rf_model.pkl")
