@@ -28,7 +28,7 @@ Two models were trained and evaluated:
 ## Instructions to run this as I used python scripts not a junyper workbook. 
 
 
-## 🧪 Evaluation Results (Example)
+## Evaluation Results (Example)
 
 | Metric      | Random Forest | Neural Network |
 |-------------|----------------|----------------|
@@ -37,7 +37,7 @@ Two models were trained and evaluated:
 
 *Note: Results will vary depending on random splits and tuning.*
 
-## 🚀 How to Run
+## How to Run
 
 1. Create a virtual environment:
    ```bash
